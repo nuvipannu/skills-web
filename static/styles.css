@@ -1,0 +1,17 @@
+form input{
+    background-color: yellow;
+}
+
+
+form select {
+    background-color: yellow;
+}
+
+form input[name="lastname"] {
+    font-weight: bold;
+}
+
+p {
+    border: 5px;
+    border-color: black;
+}

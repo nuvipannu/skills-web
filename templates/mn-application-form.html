@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title>Sample Home Page</title>
+</head>
+<body>
+
+<h1>MN Job Application</h1>
+
+<p>Interested parties, please fill out the following application:</p>
+
+<form action='/application' method="POST">
+    What's your first name? <input type="text" name="firstname">
+    <br>
+    What's your last name? <input type="text" name="lastname">
+    <br>
+    What is your salary requirement? <input type="text" name="salary">
+    <br>
+    Which job are you applying for? 
+    <select name= "job">
+        <option value="software_engineer">Software Engineer</option>
+        <option value="qa_engineer">QA Engineer</option>
+        <option value="product_manager">Product Manager</option>
+    </select>
+    <br>
+    <input type="submit">
+</form>
+
+</body>
+</html>
