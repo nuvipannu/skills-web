@@ -225,8 +225,11 @@
 </fieldset>
 
 <script>
-  // code here for above problem
-  
+function popUpnew() {
+  alert('Popup');
+}
+
+$('.tricky-to-find').on('click', popUpnew);
 </script>
 
 <div class="hint">
@@ -253,7 +256,11 @@
 </fieldset>
 
 <script>
-  // put your code here
+  function changeimage(){
+    $("img#kittenz-rule").attr("src","http://4.bp.blogspot.com/-L66h0LdCcNU/UlJXlpOHz9I/AAAAAAAACSU/ZGvlfHdwIVM/s1600/pomsky+puppies+cute.jpg");
+  }
+
+  $('img#kittenz-rule').on('dblclick', changeimage)
 </script>
 
 <div class="hint">
@@ -280,13 +287,18 @@
 </ul>
 
 <fieldset>
-  <img src="http://mytrial.typepad.com/.a/6a0147e199a17d970b0153906b3209970b-pi"
+  <img src="http://thebaconandicecreamblog.com/wp-content/uploads/2014/03/animal-cute-jawn-porcupine-Favim.com-491057_large.jpg"
       id="cute-porcupine-image" style="display: none">
   <input type="button" id="make-a-porcupine" value="I Want a Porcupine!">
 </fieldset>
 
 <script>
-  // put your code here
+
+setTimeout(function pork() {
+  $('img#cute-porcupine-image').fadeIn();
+}, 1000);
+
+  $('#make-a-porcupine').on('click', pork);
 </script>
 
 <div class="hint">
@@ -319,6 +331,14 @@
 
 <script>
   // put your code here
+  $('#agreeable-form').submit(function (evt) {
+    evt.preventDefault();
+    $('#agreeable-text').html('I like ' + $('#favorite-food-input').val() + ", too!")
+  }
+  );
+
+
+  //jquery .show method  http://stackoverflow.com/questions/1220824/using-jquery-how-can-i-make-a-div-appear-then-add-some-html-then-remove-the
 </script>
 
 <div class="hint">
